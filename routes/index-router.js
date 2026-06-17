@@ -4,14 +4,14 @@ const indexRouter = Router();
 
 const messages = [
   {
+    author: 'Kevin',
+    date: new Date(),
     text: 'Hi, there!',
-    user: 'Kevin',
-    added: new Date(),
   },
   {
+    author: 'Jennifer',
+    date: new Date(),
     text: 'Hello, world!',
-    user: 'Jennifer',
-    added: new Date(),
   },
 ];
 
