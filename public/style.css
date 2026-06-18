@@ -101,9 +101,11 @@ button {
   color: var(--color-button-text);
 }
 
-.message-board {
-  margin-top: 1rem;
+.page-title {
+  margin-bottom: 1rem;
+}
 
+.message-board {
   display: flex;
   flex-direction: column;
   align-items: start;
