@@ -30,6 +30,7 @@ export function getMessageDetails(req, res) {
 
   if (!message) {
     getNotFoundPage(req, res);
+    return;
   }
 
   res.render('pages/message-details', { title: 'Message Details', message });
