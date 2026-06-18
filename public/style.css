@@ -70,6 +70,7 @@ html {
   --color-input-bg: var(--dark-gray-11);
   --color-input-text: var(--white);
   --color-button-bg: var(--pale-blue);
+  --color-button-cancel-bg: var(--dark-gray-11);
   --color-button-text: var(--white);
   --color-error: var(--pale-light-red);
 
@@ -167,8 +168,18 @@ button,
   height: 9ex;
 }
 
+.message-form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
 .new-message-link,
+.cancel-message-button,
 .submit-message-button {
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
+}
+
+.cancel-message-button {
+  background-color: var(--color-button-cancel-bg);
 }
