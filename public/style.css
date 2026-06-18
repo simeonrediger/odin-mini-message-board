@@ -96,6 +96,12 @@ a {
   padding: 0.5rem 1rem;
 }
 
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .message-author {
   font-weight: bold;
 }
