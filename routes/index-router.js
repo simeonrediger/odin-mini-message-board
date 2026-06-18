@@ -19,4 +19,8 @@ indexRouter.get('/', (req, res) => {
   res.render('pages/index', { title: 'Mini Message Board', messages });
 });
 
+indexRouter.get('/new', (req, res) => {
+  res.render('pages/form', { title: 'New Message' });
+});
+
 export default indexRouter;

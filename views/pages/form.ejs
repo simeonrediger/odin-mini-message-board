@@ -1,0 +1,16 @@
+<%- include('../partials/layout-start', { title }); %>
+
+<main>
+  <h1><%= title %></h1>
+  <section>
+    <form action="/new" method="post">
+      <label for="message-name-input">Display name</label>
+      <input id="message-name-input" type="text" name="author"/>
+      <label for="message-text-input">Message</label>
+      <textarea id="message-text-input" name="text"></textarea>
+      <button type="submit">Post</button>
+    </form>
+  </section>
+</main>
+
+<%- include('../partials/layout-end'); %>
