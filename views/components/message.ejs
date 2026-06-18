@@ -1,6 +1,6 @@
 <article class="message">
   <% if (locals.id) { %>
-    <a href="/message/<%= locals.id %>">
+    <a href="/message/<%= locals.id %>" class="message-details-link">
   <% } %>
     <div class="message-header">
       <p class="message-author"><%= author || 'Anonymous' %></p>
