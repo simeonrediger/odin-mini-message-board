@@ -1,0 +1,12 @@
+<%- include('../partials/layout-start', { title }); %>
+
+<main>
+  <h1><%= title %></h1>
+  <section>
+    <% for (const message of messages) {%>
+      <%- include('../components/message', { ...message }); %>
+    <% } %>
+  </section>
+</main>
+
+<%- include('../partials/layout-end'); %>
