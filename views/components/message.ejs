@@ -1,6 +1,6 @@
 <article class="message">
   <div class="message-header">
-    <p class="message-author"><%= author %></p>
+    <p class="message-author"><%= author || 'Anonymous' %></p>
     <p class="message-date"><%= date.toLocaleString() %></p>
   </div>
   <p class="message-text"><%= text %></p>
