@@ -59,6 +59,7 @@ html {
   --white: #fff;
 
   --pale-light-red: #f88;
+  --pale-blue: #0077ff;
   --pale-light-blue: #a4cefe;
   --pale-light-purple: #d8b8ff;
 
@@ -66,6 +67,10 @@ html {
   --color-text: var(--white);
   --color-link: var(--pale-light-blue);
   --color-link-visited: var(--pale-light-purple);
+  --color-input-bg: var(--dark-gray-11);
+  --color-input-text: var(--white);
+  --color-button-bg: var(--pale-blue);
+  --color-button-text: var(--white);
   --color-error: var(--pale-light-red);
 
   --color-message-bg: var(--dark-gray-11);
@@ -83,6 +88,17 @@ body {
 a {
   color: var(--color-link);
   text-decoration: none;
+}
+
+input,
+textarea {
+  background-color: var(--color-input-bg);
+  color: var(--color-input-text);
+}
+
+button {
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
 }
 
 .message-board {
@@ -120,4 +136,27 @@ a {
 
 .message-text {
   max-width: 55ch;
+}
+
+.message-form > * {
+  display: block;
+}
+
+.message-form > label {
+  margin-bottom: 0.25rem;
+}
+
+.message-form > :is(input, textarea) {
+  margin-bottom: 1rem;
+}
+
+.message-name-input,
+.message-text-input {
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.submit-message-button {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
 }

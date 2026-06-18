@@ -3,12 +3,21 @@
 <main>
   <h1><%= title %></h1>
   <section>
-    <form action="/new" method="post">
+    <form action="/new" method="post" class="message-form">
       <label for="message-name-input">Display name</label>
-      <input id="message-name-input" type="text" name="author"/>
+      <input
+        id="message-name-input"
+        type="text"
+        name="author"
+        class="message-name-input"
+      />
       <label for="message-text-input">Message</label>
-      <textarea id="message-text-input" name="text"></textarea>
-      <button type="submit">Post</button>
+      <textarea
+        id="message-text-input"
+        name="text"
+        class="message-text-input"
+      ></textarea>
+      <button type="submit" class="submit-message-button">Post</button>
     </form>
   </section>
 </main>
