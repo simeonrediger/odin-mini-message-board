@@ -96,7 +96,8 @@ textarea {
   color: var(--color-input-text);
 }
 
-button {
+button,
+.button {
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
 }
@@ -166,6 +167,7 @@ button {
   height: 9ex;
 }
 
+.new-message-link,
 .submit-message-button {
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
