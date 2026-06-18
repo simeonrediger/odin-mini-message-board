@@ -116,3 +116,7 @@ a {
   font-family: monospace;
   font-style: italic;
 }
+
+.message-text {
+  max-width: 55ch;
+}
