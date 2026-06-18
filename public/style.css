@@ -55,6 +55,7 @@ html {
   --dark-gray-15: #080808;
   --dark-gray-11: #282828;
   --gray: #888;
+  --light-gray-4: #aaa;
   --white: #fff;
 
   --pale-light-red: #f88;
@@ -68,6 +69,7 @@ html {
   --color-error: var(--pale-light-red);
 
   --color-message-bg: var(--dark-gray-11);
+  --color-message-date: var(--light-gray-4);
 }
 
 /* App */
@@ -108,5 +110,7 @@ a {
 }
 
 .message-date {
+  color: var(--color-message-date);
+  font-family: monospace;
   font-style: italic;
 }
