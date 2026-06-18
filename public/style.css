@@ -75,6 +75,7 @@ html {
   --color-error: var(--pale-light-red);
 
   --color-message-bg: var(--dark-gray-11);
+  --color-message-text: var(--white);
   --color-message-date: var(--light-gray-4);
 }
 
@@ -118,6 +119,7 @@ button,
 .message {
   background-color: var(--color-message-bg);
   border-radius: 1rem;
+  display: inline-block;
   padding: 0.5rem 1rem;
 }
 
@@ -125,6 +127,11 @@ button,
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.message-author,
+.message-text {
+  color: var(--color-message-text);
 }
 
 .message-author {

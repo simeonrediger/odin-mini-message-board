@@ -24,6 +24,17 @@ export function postNewMessageForm(req, res) {
   res.redirect('/');
 }
 
+export function getMessageDetails(req, res) {
+  const { messageId } = req.params;
+  const message = messages[messageId];
+
+  if (!message) {
+    getNotFoundPage(req, res);
+  }
+
+  res.render('pages/message-details', { title: 'Message Details', message });
+}
+
 export function getNotFoundPage(req, res) {
   res.status(404).render('pages/not-found', { title: 'Page Not Found' });
 }
