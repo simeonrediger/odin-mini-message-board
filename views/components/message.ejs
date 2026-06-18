@@ -6,7 +6,7 @@
       <p class="message-author"><%= author || 'Anonymous' %></p>
       <p class="message-date"><%= date.toLocaleString() %></p>
     </div>
-    <p class="message-text"><%= text %></p>
+    <p class="message-text"><%= text || 'No message content' %></p>
   <% if (locals.id) { %>
     </a>
   <% } %>
