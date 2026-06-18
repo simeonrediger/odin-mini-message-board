@@ -7,6 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 
+app.use(express.urlencoded());
 app.use(express.static(path.join(import.meta.dirname, 'public')));
 app.use('/', indexRouter);
 
