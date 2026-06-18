@@ -2,7 +2,7 @@
 
 <main>
   <h1><%= title %></h1>
-  <section>
+  <section class="message-board">
     <% for (const message of messages) {%>
       <%- include('../components/message', { ...message }); %>
     <% } %>
