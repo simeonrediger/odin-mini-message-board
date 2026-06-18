@@ -28,4 +28,8 @@ indexRouter.post('/new', (req, res) => {
   res.redirect('/');
 });
 
+indexRouter.get('/{*splat}', (req, res) => {
+  res.status(404).render('pages/not-found', { title: 'Page Not Found' });
+});
+
 export default indexRouter;
