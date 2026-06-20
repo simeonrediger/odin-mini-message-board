@@ -190,7 +190,7 @@ button,
 }
 
 .message-text {
-  max-width: 55ch;
+  width: 40ch;
 }
 
 .new-message-form > * {
