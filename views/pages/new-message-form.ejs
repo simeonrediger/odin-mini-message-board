@@ -1,29 +1,24 @@
 <%- include('../partials/layout-start') %>
 
-<main>
-  <h1 class="page-title"><%= title %></h1>
-  <section>
-    <form action="/new" method="post" class="new-message-form">
-      <label for="message-name-input">Display name</label>
-      <input
-        id="message-name-input"
-        type="text"
-        name="author"
-        class="message-name-input"
-      />
-      <label for="message-text-input">Message</label>
-      <textarea
-        id="message-text-input"
-        name="text"
-        class="message-text-input"
-        required
-      ></textarea>
-      <div class="new-message-form-buttons">
-        <a href="/" class="button cancel-button">Cancel</a>
-        <button type="submit">Post</button>
-      </div>
-    </form>
-  </section>
-</main>
+<form action="/new" method="post" class="new-message-form">
+  <label for="message-name-input">Display name</label>
+  <input
+    id="message-name-input"
+    type="text"
+    name="author"
+    class="message-name-input"
+  />
+  <label for="message-text-input">Message</label>
+  <textarea
+    id="message-text-input"
+    name="text"
+    class="message-text-input"
+    required
+  ></textarea>
+  <div class="new-message-form-buttons">
+    <a href="/" class="button cancel-button">Cancel</a>
+    <button type="submit">Post</button>
+  </div>
+</form>
 
 <%- include('../partials/layout-end') %>

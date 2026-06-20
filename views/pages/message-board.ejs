@@ -1,15 +1,10 @@
 <%- include('../partials/layout-start') %>
 
-<main>
-  <h1 class="page-title"><%= title %></h1>
-  <section>
-    <div class="message-board">
-    <% for (const [id, message] of Object.entries(messages)) {%>
-      <%- include('../partials/message', { id, message }) %>
-    <% } %>
-    </div>
-    <a href="/new" class="button inline-block margin-top">Post a message</a>
-  </section>
-</main>
+<div class="message-board">
+<% for (const [id, message] of Object.entries(messages)) {%>
+  <%- include('../partials/message', { id, message }) %>
+<% } %>
+</div>
+<a href="/new" class="button inline-block margin-top">Post a message</a>
 
 <%- include('../partials/layout-end') %>
