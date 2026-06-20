@@ -1,4 +1,4 @@
-<%- include('../partials/layout-start') %>
+<%- include('../partials/layout-start', { isMessageBoardPage: true }) %>
 
 <div class="message-board">
 <% for (const [id, message] of Object.entries(messages)) {%>
