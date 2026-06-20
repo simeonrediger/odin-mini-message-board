@@ -6,7 +6,7 @@
     <% for (const [id, message] of Object.entries(messages)) {%>
       <%- include('../partials/message', { id, ...message }); %>
     <% } %>
-    <a href="/new" class="button new-message-link">Post a message</a>
+    <a href="/new" class="button">Post a message</a>
   </section>
 </main>
 
