@@ -4,7 +4,7 @@
   <h1 class="page-title"><%= title %></h1>
   <section class="message-board">
     <% for (const [id, message] of Object.entries(messages)) {%>
-      <%- include('../components/message', { id, ...message }); %>
+      <%- include('../partials/message', { id, ...message }); %>
     <% } %>
     <a href="/new" class="button new-message-link">Post a message</a>
   </section>
