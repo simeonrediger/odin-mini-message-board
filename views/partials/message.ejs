@@ -1,12 +1,12 @@
 <article class="message">
   <% if (locals.id) { %>
-    <a href="/message/<%= locals.id %>" class="message-details-link">
+    <a href="/message/<%= id %>" class="message-details-link">
   <% } %>
     <div class="message-header">
-      <p class="message-author"><%= author || 'Anonymous' %></p>
-      <p class="message-date"><%= date.toLocaleString() %></p>
+      <p class="message-author"><%= message.author || 'Anonymous' %></p>
+      <p class="message-date"><%= message.date.toLocaleString() %></p>
     </div>
-    <p class="message-text"><%= text || 'No message content' %></p>
+    <p class="message-text"><%= message.text || 'No message content' %></p>
   <% if (locals.id) { %>
     </a>
   <% } %>

@@ -1,11 +1,11 @@
-<%- include('../partials/layout-start', { title }); %>
+<%- include('../partials/layout-start'); %>
 
 <main>
   <h1 class="page-title"><%= title %></h1>
   <section>
     <div class="message-board">
     <% for (const [id, message] of Object.entries(messages)) {%>
-      <%- include('../partials/message', { id, ...message }); %>
+      <%- include('../partials/message', { id, message }); %>
     <% } %>
     </div>
     <a href="/new" class="button inline-block margin-top">Post a message</a>

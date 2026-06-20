@@ -1,16 +1,9 @@
-<%- include('../partials/layout-start', { title }); %>
+<%- include('../partials/layout-start'); %>
 
 <main>
   <h1 class="page-title"><%= title %></h1>
-  <section>
-    <%- include('../partials/message', { ...message }); %>
-  </section>
-  <a
-    href="/"
-    class="button inline-block margin-top"
-  >
-    Go to message board
-  </a>
+  <section><%- include('../partials/message'); %></section>
+  <a href="/" class="button inline-block margin-top">Go to message board</a>
 </main>
 
 <%- include('../partials/layout-end'); %>
