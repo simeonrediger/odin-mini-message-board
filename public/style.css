@@ -110,6 +110,10 @@ button,
   display: inline-block;
 }
 
+.margin-top {
+  margin-top: 1rem;
+}
+
 .page-title {
   margin-bottom: 1rem;
 }
@@ -193,8 +197,4 @@ button,
 
 .cancel-button {
   background-color: var(--color-button-cancel-bg);
-}
-
-.margin-top {
-  margin-top: 1rem;
 }
