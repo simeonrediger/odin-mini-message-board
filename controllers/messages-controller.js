@@ -12,7 +12,7 @@ const messages = [
 ];
 
 export function getMessageBoard(req, res) {
-  res.render('pages/index', { title: 'Mini Message Board', messages });
+  res.render('pages/messages', { title: 'Mini Message Board', messages });
 }
 
 export function getNewMessageForm(req, res) {
