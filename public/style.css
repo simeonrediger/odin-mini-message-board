@@ -130,8 +130,6 @@ button,
   border-radius: 1rem;
   display: inline-block;
   padding: 0.5rem 1rem;
-
-  position: relative;
 }
 
 .message-details-link:hover .message-author {
