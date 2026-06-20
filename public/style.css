@@ -164,15 +164,15 @@ button,
   max-width: 55ch;
 }
 
-.message-form > * {
+.new-message-form > * {
   display: block;
 }
 
-.message-form > label {
+.new-message-form > label {
   margin-bottom: 0.25rem;
 }
 
-.message-form > :is(input, textarea) {
+.new-message-form > :is(input, textarea) {
   margin-bottom: 1rem;
 }
 
@@ -190,7 +190,7 @@ button,
   height: 9ex;
 }
 
-.message-form-buttons {
+.new-message-form-buttons {
   display: flex;
   gap: 1rem;
 }
