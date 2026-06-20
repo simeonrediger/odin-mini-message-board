@@ -16,7 +16,7 @@ export function getMessageBoard(req, res) {
 }
 
 export function getNewMessageForm(req, res) {
-  res.render('pages/form', { title: 'New Message' });
+  res.render('pages/new-message-form', { title: 'New Message' });
 }
 
 export function postNewMessageForm(req, res) {
