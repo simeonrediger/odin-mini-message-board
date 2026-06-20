@@ -102,6 +102,9 @@ button,
 .button {
   background-color: var(--color-button-bg);
   color: var(--color-button-text);
+}
+
+.inline-block {
   display: inline-block;
 }
 
