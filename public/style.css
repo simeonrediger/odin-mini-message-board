@@ -149,6 +149,7 @@ button,
 
 .message-board {
   overflow-y: auto;
+  padding-inline: 1rem;
 
   display: flex;
   flex-direction: column;
