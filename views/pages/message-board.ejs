@@ -2,11 +2,13 @@
 
 <main>
   <h1 class="page-title"><%= title %></h1>
-  <section class="message-board">
+  <section>
+    <div class="message-board">
     <% for (const [id, message] of Object.entries(messages)) {%>
       <%- include('../partials/message', { id, ...message }); %>
     <% } %>
-    <a href="/new" class="button">Post a message</a>
+    </div>
+    <a href="/new" class="button inline-block margin-top">Post a message</a>
   </section>
 </main>
 
