@@ -141,6 +141,12 @@ button,
   margin-bottom: 1rem;
 }
 
+.centered-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .message-board {
   overflow-y: auto;
 
