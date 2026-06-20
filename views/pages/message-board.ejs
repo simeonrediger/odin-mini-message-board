@@ -1,10 +1,16 @@
 <%- include('../partials/layout-start', { isMessageBoardPage: true }) %>
 
-<div class="message-board">
-<% for (const [id, message] of Object.entries(messages)) {%>
-  <%- include('../partials/message', { id, message }) %>
-<% } %>
+<div data-scroll-to-bottom class="message-board">
+  <% for (const [id, message] of Object.entries(messages)) {%>
+    <%- include('../partials/message', { id, message }) %>
+  <% } %>
 </div>
 <a href="/new" class="button inline-block margin-top">Post a message</a>
+
+<script>
+  document.querySelectorAll('[data-scroll-to-bottom]').forEach(element =>
+    element.scrollTop = element.scrollHeight
+  );
+</script>
 
 <%- include('../partials/layout-end') %>
