@@ -208,6 +208,13 @@ button,
   margin-bottom: 1rem;
 }
 
+.errors {
+  color: var(--color-error);
+  list-style: disc;
+  margin-block: 1rem;
+  margin-inline-start: 1.5rem;
+}
+
 label:has(+ :required)::after {
   content: '*';
   color: var(--color-required);

@@ -1,3 +1,5 @@
+import { validationResult, matchedData } from 'express-validator';
+
 import * as db from '../db/messages.queries.js';
 
 export async function getMessageBoard(req, res) {
@@ -13,7 +15,15 @@ export function getCreateMessageForm(req, res) {
 }
 
 export async function createMessage(req, res) {
-  const { author, content } = req.body;
+  const errors = validationResult(req);
+
+  if (!errors.isEmpty()) {
+    res.locals.errors = errors.array();
+    res.status(400);
+    return getCreateMessageForm(req, res);
+  }
+
+  const { author, content } = matchedData(req);
   await db.createMessage({ author, content });
   res.redirect('/');
 }
