@@ -160,7 +160,7 @@ button,
 .message {
   background-color: var(--color-message-bg);
   border-radius: 0.5rem;
-  width: 40ch;
+  width: 50ch;
   padding: 0.375rem 1rem;
 }
 
