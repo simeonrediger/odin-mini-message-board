@@ -6,7 +6,7 @@ const messagesRouter = Router();
 
 messagesRouter.get('/', messagesController.getMessageBoard);
 messagesRouter
-  .route('/new')
+  .route('/new-message')
   .get(messagesController.getCreateMessageForm)
   .post(messagesController.postCreateMessageForm);
 messagesRouter.get('/message/:id', messagesController.getMessageDetails);
