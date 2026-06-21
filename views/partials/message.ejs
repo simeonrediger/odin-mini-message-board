@@ -5,8 +5,11 @@
     <div class="message-header">
       <% const author = message.author || 'Anonymous' %>
       <p class="message-author" title="<%= author %>"><%= author %></p>
-      <% const isoTime = message.time.toISOString(); %>
-      <p data-time="<%= isoTime %>" class="message-time"><%= isoTime %></p>
+      <%
+        const isoTime = message.time.toISOString();
+        const utcTime = `${isoTime.slice(0, 16).replace('T', ' ')} UTC`;
+      %>
+      <p data-time="<%= isoTime %>" class="message-time"><%= utcTime %></p>
     </div>
     <p class="message-content"><%= message.content || 'No message content' %></p>
   <% if (locals.linkMessageDetails) { %>
