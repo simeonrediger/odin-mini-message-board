@@ -195,15 +195,15 @@ button,
   text-wrap: nowrap;
 }
 
-.new-message-form > * {
+.create-message-form > * {
   display: block;
 }
 
-.new-message-form > label {
+.create-message-form > label {
   margin-bottom: 0.25rem;
 }
 
-.new-message-form > :is(input, textarea) {
+.create-message-form > :is(input, textarea) {
   margin-bottom: 1rem;
 }
 
@@ -221,7 +221,7 @@ button,
   height: 9ex;
 }
 
-.new-message-form-buttons {
+.create-message-form-buttons {
   display: flex;
   gap: 1rem;
 }

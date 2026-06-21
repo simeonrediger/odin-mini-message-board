@@ -7,8 +7,8 @@ const messagesRouter = Router();
 messagesRouter.get('/', messagesController.getMessageBoard);
 messagesRouter
   .route('/new')
-  .get(messagesController.getNewMessageForm)
-  .post(messagesController.postNewMessageForm);
+  .get(messagesController.getCreateMessageForm)
+  .post(messagesController.postCreateMessageForm);
 messagesRouter.get('/message/:id', messagesController.getMessageDetails);
 messagesRouter.get('/{*splat}', messagesController.getNotFoundPage);
 

@@ -8,11 +8,11 @@ export async function getMessageBoard(req, res) {
   });
 }
 
-export function getNewMessageForm(req, res) {
-  res.render('pages/new-message-form', { title: 'New Message' });
+export function getCreateMessageForm(req, res) {
+  res.render('pages/create-message-form', { title: 'New Message' });
 }
 
-export async function postNewMessageForm(req, res) {
+export async function postCreateMessageForm(req, res) {
   const { author, content } = req.body;
   await db.insertMessage({ author, content });
   res.redirect('/');
