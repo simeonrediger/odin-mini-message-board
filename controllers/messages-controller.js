@@ -22,8 +22,7 @@ export async function getMessageDetails(req, res) {
   const message = await db.getMessage(+req.params.id);
 
   if (!message) {
-    getNotFoundPage(req, res);
-    return;
+    return getNotFoundPage(req, res);
   }
 
   res.render('pages/message-details', { title: 'Message Details', message });
