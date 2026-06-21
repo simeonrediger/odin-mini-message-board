@@ -3,7 +3,7 @@ import * as db from '../db/queries.js';
 export async function getMessageBoard(req, res) {
   res.render('pages/message-board', {
     title: 'Mini Message Board',
-    messages: await db.getAllMessages(),
+    messages: await db.findMessages(),
     linkMessageDetails: true,
   });
 }

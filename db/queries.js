@@ -1,6 +1,6 @@
 import pool from './pool.js';
 
-export async function getAllMessages() {
+export async function findMessages() {
   const { rows } = await pool.query('SELECT * FROM messages');
   return rows;
 }
