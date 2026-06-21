@@ -9,7 +9,7 @@ messagesRouter
   .route('/new')
   .get(messagesController.getNewMessageForm)
   .post(messagesController.postNewMessageForm);
-messagesRouter.get('/message/:messageId', messagesController.getMessageDetails);
+messagesRouter.get('/message/:id', messagesController.getMessageDetails);
 messagesRouter.get('/{*splat}', messagesController.getNotFoundPage);
 
 export default messagesRouter;
