@@ -20,7 +20,8 @@ export function getNewMessageForm(req, res) {
 }
 
 export function postNewMessageForm(req, res) {
-  messages.push({ ...req.body, date: new Date() });
+  const { author, text } = req.body;
+  messages.push({ author, date: new Date(), text });
   res.redirect('/');
 }
 
