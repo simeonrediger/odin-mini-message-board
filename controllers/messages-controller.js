@@ -26,9 +26,9 @@ export function getNewMessageForm(req, res) {
   res.render('pages/new-message-form', { title: 'New Message' });
 }
 
-export function postNewMessageForm(req, res) {
+export async function postNewMessageForm(req, res) {
   const { author, content } = req.body;
-  messages.push({ author, time: new Date(), content });
+  await db.insertMessage({ author, content });
   res.redirect('/');
 }
 
