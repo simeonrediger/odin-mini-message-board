@@ -3,7 +3,8 @@
     <a href="/message/<%= id %>" class="message-details-link">
   <% } %>
     <div class="message-header">
-      <p class="message-author"><%= message.author || 'Anonymous' %></p>
+      <% const author = message.author || 'Anonymous' %>
+      <p class="message-author" title="<%= author %>"><%= author %></p>
       <p class="message-date"><%= message.date.toLocaleString() %></p>
     </div>
     <p class="message-text"><%= message.text || 'No message content' %></p>
