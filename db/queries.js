@@ -5,7 +5,7 @@ export async function findMessages() {
   return rows;
 }
 
-export async function getMessage(id) {
+export async function findMessageById(id) {
   const { rows } = await pool.query(
     `
     SELECT * FROM messages

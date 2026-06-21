@@ -19,7 +19,7 @@ export async function createMessage(req, res) {
 }
 
 export async function getMessageDetails(req, res) {
-  const message = await db.getMessage(+req.params.id);
+  const message = await db.findMessageById(+req.params.id);
 
   if (!message) {
     return getNotFound(req, res);
