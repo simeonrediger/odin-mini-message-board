@@ -1,6 +1,6 @@
 <article class="message">
-  <% if (locals.id) { %>
-    <a href="/message/<%= id %>" class="message-details-link">
+  <% if (locals.linkMessageDetails) { %>
+    <a href="/message/<%= message.id %>" class="message-details-link">
   <% } %>
     <div class="message-header">
       <% const author = message.author || 'Anonymous' %>
@@ -8,7 +8,7 @@
       <p class="message-time"><%= message.time.toLocaleString() %></p>
     </div>
     <p class="message-content"><%= message.content || 'No message content' %></p>
-  <% if (locals.id) { %>
+  <% if (locals.linkMessageDetails) { %>
     </a>
   <% } %>
 </article>

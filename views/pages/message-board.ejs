@@ -1,9 +1,9 @@
 <%- include('../partials/layout-start', { isMessageBoardPage: true }) %>
 
 <div data-scroll-to-bottom class="message-board">
-  <% for (const [id, message] of Object.entries(messages)) {%>
-    <%- include('../partials/message', { id, message }) %>
-  <% } %>
+  <% messages.forEach(message => { %>
+    <%- include('../partials/message', { message }) %>
+  <% }); %>
 </div>
 <a href="/new" class="button inline-block margin-top">Post a message</a>
 

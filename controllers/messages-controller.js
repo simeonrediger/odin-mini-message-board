@@ -15,7 +15,11 @@ import * as db from '../db/queries.js';
 
 export async function getMessageBoard(req, res) {
   const messages = await db.getAllMessages();
-  res.render('pages/message-board', { title: 'Mini Message Board', messages });
+  res.render('pages/message-board', {
+    title: 'Mini Message Board',
+    messages,
+    linkMessageDetails: true,
+  });
 }
 
 export function getNewMessageForm(req, res) {
