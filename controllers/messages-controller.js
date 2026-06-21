@@ -22,12 +22,12 @@ export async function getMessageDetails(req, res) {
   const message = await db.getMessage(+req.params.id);
 
   if (!message) {
-    return getNotFoundPage(req, res);
+    return getNotFound(req, res);
   }
 
   res.render('pages/message-details', { title: 'Message Details', message });
 }
 
-export function getNotFoundPage(req, res) {
+export function getNotFound(req, res) {
   res.status(404).render('pages/not-found', { title: 'Page Not Found' });
 }

@@ -10,6 +10,6 @@ messagesRouter
   .get(messagesController.getCreateMessageForm)
   .post(messagesController.createMessage);
 messagesRouter.get('/message/:id', messagesController.getMessageDetails);
-messagesRouter.get('/{*splat}', messagesController.getNotFoundPage);
+messagesRouter.get('/{*splat}', messagesController.getNotFound);
 
 export default messagesRouter;
