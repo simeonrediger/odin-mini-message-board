@@ -17,7 +17,7 @@ export async function findMessageById(id) {
   return rows[0];
 }
 
-export async function insertMessage({ author, content }) {
+export async function createMessage({ author, content }) {
   await pool.query(
     `
     INSERT INTO messages

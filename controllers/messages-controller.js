@@ -14,7 +14,7 @@ export function getCreateMessageForm(req, res) {
 
 export async function createMessage(req, res) {
   const { author, content } = req.body;
-  await db.insertMessage({ author, content });
+  await db.createMessage({ author, content });
   res.redirect('/');
 }
 
