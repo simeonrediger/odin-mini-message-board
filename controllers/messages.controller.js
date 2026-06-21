@@ -1,4 +1,4 @@
-import * as db from '../db/queries.js';
+import * as db from '../db/messages.queries.js';
 
 export async function getMessageBoard(req, res) {
   res.render('pages/message-board', {

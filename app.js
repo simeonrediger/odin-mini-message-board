@@ -1,7 +1,7 @@
 import express from 'express';
 import path from 'node:path';
 
-import messagesRouter from './routes/messages-router.js';
+import messagesRouter from './routes/messages.router.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
