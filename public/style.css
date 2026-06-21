@@ -176,7 +176,7 @@ button,
 }
 
 .message-author,
-.message-text {
+.message-content {
   color: var(--color-message-text);
 }
 
@@ -208,12 +208,12 @@ button,
 }
 
 .message-name-input,
-.message-text-input {
+.message-content-input {
   border-radius: 1rem;
   padding: 0.5rem 1rem;
 }
 
-.message-text-input {
+.message-content-input {
   resize: vertical;
 
   width: 55ch;

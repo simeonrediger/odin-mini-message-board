@@ -2,12 +2,12 @@ const messages = [
   {
     author: 'Kevin',
     date: new Date(),
-    text: 'Hi, there!',
+    content: 'Hi, there!',
   },
   {
     author: 'Jennifer',
     date: new Date(),
-    text: 'Hello, world!',
+    content: 'Hello, world!',
   },
 ];
 
@@ -23,8 +23,8 @@ export function getNewMessageForm(req, res) {
 }
 
 export function postNewMessageForm(req, res) {
-  const { author, text } = req.body;
-  messages.push({ author, date: new Date(), text });
+  const { author, content } = req.body;
+  messages.push({ author, date: new Date(), content });
   res.redirect('/');
 }
 
