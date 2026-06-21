@@ -8,7 +8,7 @@ messagesRouter.get('/', messagesController.getMessageBoard);
 messagesRouter
   .route('/new-message')
   .get(messagesController.getCreateMessageForm)
-  .post(messagesController.postCreateMessageForm);
+  .post(messagesController.createMessage);
 messagesRouter.get('/message/:id', messagesController.getMessageDetails);
 messagesRouter.get('/{*splat}', messagesController.getNotFoundPage);
 

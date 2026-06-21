@@ -12,7 +12,7 @@ export function getCreateMessageForm(req, res) {
   res.render('pages/create-message-form', { title: 'New Message' });
 }
 
-export async function postCreateMessageForm(req, res) {
+export async function createMessage(req, res) {
   const { author, content } = req.body;
   await db.insertMessage({ author, content });
   res.redirect('/');
