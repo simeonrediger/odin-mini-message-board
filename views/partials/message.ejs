@@ -5,7 +5,7 @@
     <div class="message-header">
       <% const author = message.author || 'Anonymous' %>
       <p class="message-author" title="<%= author %>"><%= author %></p>
-      <p class="message-date"><%= message.date.toLocaleString() %></p>
+      <p class="message-time"><%= message.time.toLocaleString() %></p>
     </div>
     <p class="message-content"><%= message.content || 'No message content' %></p>
   <% if (locals.id) { %>

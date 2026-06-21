@@ -76,7 +76,7 @@ html {
 
   --color-message-bg: var(--dark-gray-11);
   --color-message-text: var(--white);
-  --color-message-date: var(--light-gray-4);
+  --color-message-time: var(--light-gray-4);
 }
 
 /* App */
@@ -188,8 +188,8 @@ button,
   text-wrap: nowrap;
 }
 
-.message-date {
-  color: var(--color-message-date);
+.message-time {
+  color: var(--color-message-time);
   font-family: monospace;
   font-style: italic;
   text-wrap: nowrap;
