@@ -5,7 +5,8 @@
     <div class="message-header">
       <% const author = message.author || 'Anonymous' %>
       <p class="message-author" title="<%= author %>"><%= author %></p>
-      <p class="message-time"><%= message.time.toLocaleString() %></p>
+      <% const isoTime = message.time.toISOString(); %>
+      <p data-time="<%= isoTime %>" class="message-time"><%= isoTime %></p>
     </div>
     <p class="message-content"><%= message.content || 'No message content' %></p>
   <% if (locals.linkMessageDetails) { %>
