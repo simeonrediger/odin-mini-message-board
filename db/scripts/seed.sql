@@ -1,5 +1,5 @@
 INSERT INTO messages
-  (author, time, content)
+  (author, content)
 VALUES
-  ('Kevin', now(), 'Hi, there!'),
-  ('Jennifer', now(), 'Hello, world!');
+  ('Kevin', 'Hi, there!'),
+  ('Jennifer', 'Hello, world!');
