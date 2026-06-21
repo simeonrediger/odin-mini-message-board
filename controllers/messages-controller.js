@@ -33,8 +33,7 @@ export async function postNewMessageForm(req, res) {
 }
 
 export function getMessageDetails(req, res) {
-  const { id } = req.params;
-  const message = messages[id];
+  const message = messages[req.params.id];
 
   if (!message) {
     getNotFoundPage(req, res);
