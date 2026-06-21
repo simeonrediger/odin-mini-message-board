@@ -11,7 +11,10 @@ const messages = [
   },
 ];
 
-export function getMessageBoard(req, res) {
+import * as db from '../db/queries.js';
+
+export async function getMessageBoard(req, res) {
+  const messages = await db.getAllMessages();
   res.render('pages/message-board', { title: 'Mini Message Board', messages });
 }
 
