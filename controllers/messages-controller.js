@@ -1,16 +1,3 @@
-const messages = [
-  {
-    author: 'Kevin',
-    time: new Date(),
-    content: 'Hi, there!',
-  },
-  {
-    author: 'Jennifer',
-    time: new Date(),
-    content: 'Hello, world!',
-  },
-];
-
 import * as db from '../db/queries.js';
 
 export async function getMessageBoard(req, res) {
