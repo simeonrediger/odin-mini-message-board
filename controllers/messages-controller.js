@@ -32,8 +32,8 @@ export async function postNewMessageForm(req, res) {
   res.redirect('/');
 }
 
-export function getMessageDetails(req, res) {
-  const message = messages[req.params.id];
+export async function getMessageDetails(req, res) {
+  const message = await db.getMessage(+req.params.id);
 
   if (!message) {
     getNotFoundPage(req, res);
